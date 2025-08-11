@@ -51,7 +51,7 @@ export const products = [
     description: "لپ‌تاپ Core i7 با کارت گرافیک RTX 4060 و رم 16 گیگ",
     category: "کامپیوتر و لپ‌تاپ",
     inStock: 5,
-    image: "/images/laptop.jpg",
+    image: "/images/laptop.png",
   },
   {
     id: 7,
@@ -78,7 +78,7 @@ export const products = [
     description: "ساعت هوشمند ضدآب با سنسور ضربان قلب و GPS",
     category: "گجت",
     inStock: 20,
-    image: "/images/smartwatch.jpg",
+    image: "/images/smartwatch.webp",
   },
   {
     id: 10,
