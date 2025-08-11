@@ -10,7 +10,7 @@ function ProductsPage() {
   const [editProduct, setEditProduct] = useState({ name: "", price: "" });
 
   function fetchData() {
-    fetch("http://localhost:3000/api/products")
+    fetch("/api/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
@@ -21,7 +21,7 @@ function ProductsPage() {
   }, []);
 
   function handleAddProduct() {
-    fetch("http://localhost:3000/api/products", {
+    fetch("/api/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ function ProductsPage() {
   }
 
   function handleDeleteProduct(id) {
-    fetch("http://localhost:3000/api/products", {
+    fetch("/api/products", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function ProductsPage() {
   }
 
   function handleUpdateProduct() {
-    fetch("http://localhost:3000/api/products", {
+    fetch("/api/products", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
